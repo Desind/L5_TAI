@@ -1,0 +1,10 @@
+<div class="marg">
+  <input #input type="text" >
+</div>
+  <ul>
+    <li *ngFor="let p of posts$">
+      <a href="#" [routerLink]="['/blog/detail/', p.id]"> {{ p.text }}</a></li>
+  </ul>
+
+
+
